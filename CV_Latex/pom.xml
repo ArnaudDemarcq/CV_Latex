@@ -18,7 +18,7 @@
                     <artifactId>latex-maven-plugin</artifactId>
                     <version>1.0</version>
                     <configuration>
-                        <binariesPath>"C:\Program Files\MiKTeX 2.7\miktex\bin\"</binariesPath>
+                        <binariesPath>${latex.binariesPath}</binariesPath>
                     </configuration>
                 </plugin>
             </plugins>

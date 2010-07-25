@@ -1,0 +1,106 @@
+
+%
+% Commands for Experience Table
+%
+\newcommand\XpLine[2]{
+\SP
+&
+	\begin{tabular}{p{3cm}}
+		#1
+	\end{tabular}
+	&
+	\begin{tabular}{p{12.5cm}}
+		#2
+	\end{tabular} \\
+}
+
+\newcommand\XpTitle[3]{
+\XpLine
+	{	\textbf{#1}}
+	{	\textbf{#2} \\
+		\textit{#3}
+	}
+}		
+
+\newcommand\XpItem[6]{
+\XpLine
+	{
+		\textbf{#1}\\
+		à\\
+		\textbf{#2}
+	}
+	{
+		\textbf{#3} (#4)\\
+		\textbf{Projet} : #5\\
+		\textbf{Mission} : #6
+	}
+}
+
+\newcommand\XpItemEn[6]{
+\XpLine
+	{
+		\textbf{#1}\\
+		to\\
+		\textbf{#2}
+	}
+	{
+		\textbf{#3} (#4)\\
+		\textbf{Project} : #5\\
+		\textbf{Mission} : #6
+	}
+}
+
+
+%
+% Commands for Formation
+%
+
+
+\newcommand\FormationLine[2]{
+
+\SP
+&
+	\begin{tabular}{p{3cm}}
+		#1
+	\end{tabular}
+	&
+	\begin{tabular}{p{12.5cm}}
+		#2
+	\end{tabular} \\
+}
+
+
+\newcommand\FormationItem[3]
+{
+
+\FormationLine
+	{\textbf{#1}}
+	{\textbf{#2} \\
+	 #3} \\	 
+}
+
+%
+% Commands for Comp
+%
+
+\newcommand\SkillLine[2]{
+
+\SP
+&
+	\begin{tabular}{p{3cm}}
+		#1
+	\end{tabular}
+	&
+	\begin{tabular}{p{12.5cm}}
+		#2
+	\end{tabular} \\
+}
+
+
+\newcommand\SkillItem[2]
+{
+
+\SkillLine
+	{\textbf{#1}}
+	{#2}
+}
